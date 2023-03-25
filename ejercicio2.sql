@@ -77,7 +77,10 @@ numeroorden SMALLINT,
 fecha_prestamo DATE NOT NULL,
 fecha_devolucion DATE DEFAULT NULL,
 notas BLOB,
-FOREIGN KEY (clavesocio) REFERENCES ejemplar(claveejemplar)
+FOREIGN KEY (clavesocio) REFERENCES socio(clavesocio)
+ON DELETE SET NULL
+ON UPDATE CASCADE,
+FOREIGN KEY (claveejemplar) REFERENCES ejemplar(claveejemplar)
 ON DELETE SET NULL
 ON UPDATE CASCADE
 );
@@ -87,6 +90,8 @@ CREATE TABLE trata_sobre(
 clavelibro INT NOT NULL,
 clavetema SMALLINT NOT NULL,
 FOREIGN KEY (clavelibro) REFERENCES libro (clavelibro)
+ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (clavetema) REFERENCES tema (clavetema)
 ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -95,5 +100,7 @@ CREATE TABLE escrito_por(
 clavelibro INT NOT NULL,
 claveautor INT NOT NULL,
 FOREIGN KEY (clavelibro) REFERENCES libro(clavelibro)
+ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (claveautor) REFERENCES autor(claveautor)
 ON DELETE CASCADE ON UPDATE CASCADE
 );
