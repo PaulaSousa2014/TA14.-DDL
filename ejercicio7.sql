@@ -28,3 +28,4 @@ on delete set null on update cascade,
 foreign key(despacho) references despachos(numero)
 on delete set null on update cascade
 );
+
