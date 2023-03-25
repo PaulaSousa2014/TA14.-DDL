@@ -1,7 +1,7 @@
 # TA14. DDL Lenguaje SQL, lenguaje de definición de datos
 ## Equipo 4. Alberto, Marc Saez, Paula
 
-- [X] Realizar el DDL de los ejercicios 4, 11 y 16 de la TA12 [TA12](https://github.com/PaulaSousa2014/TA12.-Diagrama-Entidad-Relacion.git)
+- [X] Realizar el DDL de los ejercicios 4, 11 y 16 de la [TA12](https://github.com/PaulaSousa2014/TA12.-Diagrama-Entidad-Relacion.git)
 - [X] Realizar los siguientes ejercicios:
     - <img width="791" alt="image" src="https://user-images.githubusercontent.com/110301198/227705283-b24b4712-b17a-4e85-8438-357363337c7c.png">
     - <img width="816" alt="image" src="https://user-images.githubusercontent.com/110301198/227705327-7bdade64-8eb5-4ed4-bed4-fcc24a9535d5.png">
